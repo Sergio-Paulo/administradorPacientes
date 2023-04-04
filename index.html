@@ -4,20 +4,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./styles/style.css">
     <title>Administrador de pacientes</title>
 </head>
 <body>
+    <div id="app">
+
     <header>
-                
+        <h1 class="flex justify-center uppercase text-5xl"> Administrador de pacientes</h1>
     </header>
-
-    <div id="app"></div>
-
-    <footer>
-
-    </footer>
-
+    
+    <main class="flex justify-center mt-32">
+        <div class="bg-slate-800 w-96 h-96 flex justify-center items-center">
+            <div class="agregar-cita">
+                <form id="nueva-cita" action="./show-data.html">
+                    <legend class="">Datos del Paciente</legend>
+                    
+                    <div class="">
+                        <label class="">Name:
+                        <div class="">
+                            <input type="text" id="name" name="name" placeholder="Name">
+                        </div>
+                        </label>
+                    </div>
+                    
+                    <div class="">
+                        <label class="">Last Name:
+                        <div class="">
+                            <input type="text" id="lname" name="lname" placeholder="Last Name">
+                        </div>
+                        </label>
+                    </div>
+                    
+                    <div class="">
+                        <label class="">Phone:
+                        <div class="">
+                            <input type="number" id="phone" name="phone" placeholder="291 500 0000">
+                        </div>
+                        </label>
+                    </div>
+                    
+                    <div class="">
+                        <label class="">Appointment:
+                        <div class="">
+                            <input type="date" id="appointment" name="appointment">
+                        </div>
+                        </label>
+                    </div>
+                    
+        
+                    <div class="">
+                        <label class="">Hour:
+                        <div class="">
+                            <input type="time" id="hour" name="hour">
+                        </div>
+                        </label>
+                    </div>
+        
+                    <div class="">
+                        <label class="">Observation:
+                        <div class="">
+                            <textarea id="observation" name="observation"></textarea>
+                        </div>
+                        </label>
+                    </div>
+        
+                    <div class="form-group">
+                            <button type="submit" class="btn btn-success w-100 d-block">Make an Appointment</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    
+            
+        </main>
+        <footer>
+            
+        </footer>
+        
+    </div>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="./scripts/main.js"></script>    
